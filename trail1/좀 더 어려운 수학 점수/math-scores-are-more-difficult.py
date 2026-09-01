@@ -1,10 +1,7 @@
 am, ae = map(int, input().split())
 bm, be = map(int, input().split())
 
-if am == bm and ae > be:
+if am > bm or (am == bm and ae > be):
     print("A")
-elif am == bm and ae < be:
+else:
     print("B")
-elif am > bm:
-    print("A")
-else: print("B")
